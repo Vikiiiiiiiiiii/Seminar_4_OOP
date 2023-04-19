@@ -1,14 +1,18 @@
 import java.util.Random;
 
-public abstract class Warrior<W extends Weapon, S extends SafeTool> extends Personage{
+public abstract class Warrior<W extends Weapon, S extends Protection> extends Personage{
 protected static Random rnd = new Random();
+
     protected W weapon;
     protected S protect;
+
     public Warrior(String name, int hp, S protect, W weapon) {
+
         super(name, hp, protect);
         this.weapon = weapon;
         this.protect = protect;
     }
+    
     public int harm(){                       // нанесение урона
         boolean isHit = rnd.nextBoolean();   // попадание
         int damage = 0;

@@ -4,13 +4,13 @@ public abstract class Personage {
     protected static Random rnd = new Random();
     private String name;
     private int hp;
-    protected SafeTool protect;
+    protected Protection protect;
 
     public boolean isAlive(){                        // живой
         return hp>0;
     }
 
-    public Personage(String name, int hp, SafeTool protect) {
+    public Personage(String name, int hp, Protection protect) {
         this.name = name;
         this.hp = hp;
         this.protect = protect;

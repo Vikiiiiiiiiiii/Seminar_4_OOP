@@ -1,6 +1,6 @@
-public class Thief extends Warrior<Knife, SafeTool>{             // вор
+public class Thief extends Warrior<Knife, Protection>{             // вор
        
-    public Thief(String name, int hp, SafeTool protect, Knife weapon) {
+    public Thief(String name, int hp, Protection protect, Knife weapon) {
         super(name, hp, protect, weapon);
     }
 
